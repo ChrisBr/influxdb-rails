@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "influxdb/rails/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "influxdb-rails"
+  spec.name        = "experimental-influxdb-rails"
   spec.version     = InfluxDB::Rails::VERSION
   spec.authors     = ["Dominik Menke", "Todd Persen"]
   spec.email       = ["dominik.menke@gmail.com", "todd@influxdb.com"]
