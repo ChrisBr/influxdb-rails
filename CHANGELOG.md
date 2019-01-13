@@ -3,6 +3,12 @@
 For the full commit log, [see here](https://github.com/influxdata/influxdb-rails/commits/master).
 
 
+## v1.0.0.beta4, released 2019-01-13
+- Remove empty tags (#64 @ChrisBr)
+- Add default location :raw to SQL subscriber (#64 @ChrisBr)
+- Add dynamic values (#65 @ChrisBr)
+- Add start time value to request subscriber (#65 @ChrisBr)
+
 ## v1.0.0.beta3, released 2019-01-07
 
 - Add dynamic tags (#62, @ChrisBr)
