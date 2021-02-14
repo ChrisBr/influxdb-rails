@@ -25,7 +25,7 @@ RSpec.describe "ActionView partial metrics", type: :request do
         app_name:        :app_name,
         tags_middleware: :tags_middleware
       ),
-      values: a_hash_including(
+      fields: a_hash_including(
         additional_value: :value,
         request_id:       :request_id,
         value:            be_between(1, 500)
@@ -39,11 +39,11 @@ RSpec.describe "ActionView partial metrics", type: :request do
     get "/metrics"
 
     expect_metric(
-      tags:      a_hash_including(
+      tags: a_hash_including(
         location: "MetricsController#index",
         hook:     "render_partial"
       ),
-      timestamp: 1_514_797_200
+      time: Time.at(1_514_797_200)
     )
   end
 
