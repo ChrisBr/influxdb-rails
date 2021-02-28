@@ -27,7 +27,7 @@ RSpec.describe "ActionView collection metrics", type: :request do
         tags_middleware: :tags_middleware
       ),
       fields: a_hash_including(
-        additional_value: :value,
+        additional_field: :value,
         count:            3,
         request_id:       :request_id,
         value:            be_between(1, 500)

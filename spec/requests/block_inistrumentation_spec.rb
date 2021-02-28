@@ -27,9 +27,9 @@ RSpec.describe "BlockInstrumentation metrics", type: :request do
         name:            "name"
       ),
       fields: a_hash_including(
-        additional_value: :value,
+        additional_field: :value,
         request_id:       :request_id,
-        block_value:      :block_value,
+        block_field:      :block_value,
         value:            be_between(1, 500)
       )
     )
